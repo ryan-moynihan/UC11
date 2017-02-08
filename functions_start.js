@@ -60,8 +60,8 @@ function multTable(row, col) {
  * @returns {number}
  */
 function factorial(n) {
-    var result = 0;
-    for (var i = n; i > 1; i--) {
+    var result = 1;
+    for (var i = result; i <= n; i++) {
         result = result * i;
     }
     return result;
