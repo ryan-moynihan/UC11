@@ -24,7 +24,7 @@ function listTriangularNumbers(n) {
     for (i = 1; i <= n; ++i) {
         num = i;
         for (j = i; j >= 1; --j) {
-            num = num + j;
+            num = num + j - 1;
         }
         array.push(num);
     }
@@ -85,9 +85,9 @@ function sort(a) {
         var k;
         for (k = i - 1;
             (k >= 0) && (j < result[k]); k--) {
-            result[k - 1] = result[k];
+            result[k + 1] = result[k];
         }
-        result[k - 1] = j;
+        result[k + 1] = j;
     }
     return result;
 }
