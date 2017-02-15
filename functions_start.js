@@ -23,7 +23,7 @@ function listTriangularNumbers(n) {
     var array = [];
     for (i = 1; i <= n; ++i) {
         num = i;
-        for (j = i; j >= 1; --j) {
+        for (j = i; j > 1; --j) {
             num = num + j - 1;
         }
         array.push(num);
@@ -41,7 +41,7 @@ function multTable(row, col) {
     var x;
     for (var i = 1; i < col; i++) {
         table = table + "<tr>";
-        for (var j = 1; j < row; j++) {
+        for (var j = 1; j < row + 2; j++) {
             x = i * j;
             table = table + "<td>" + x + "</td>";
         }
